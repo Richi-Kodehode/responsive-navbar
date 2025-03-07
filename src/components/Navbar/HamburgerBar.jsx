@@ -1,10 +1,8 @@
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NAV_DATA } from "./data/navData";
 import { IoCloseSharp } from "react-icons/io5";
-import { useRef } from "react";
 
 export const HamburgerBar = ({ isOpen, handleMenuToggle, setIsOpen }) => {
-  const menuRef = useRef(null);
   return (
     <>
       <div>
@@ -13,7 +11,7 @@ export const HamburgerBar = ({ isOpen, handleMenuToggle, setIsOpen }) => {
         </button>
       </div>
       <div
-        className={`absolute bg-orange-500 top-0 left-0 w-screen h-screen ${
+        className={`absolute bg-gray-500 top-0 left-0 w-screen h-screen ${
           isOpen ? "" : "hidden"
         }`}
       >
