@@ -11,9 +11,9 @@ export const Header = () => {
 
   return (
     <header className="bg-gray-500 fixed w-full z-50 flex flex-col justify-center">
-      <div className="flex items-center justify-between px-4 lg:px-12">
-        <div>
-          <img src="/182logo.png" alt="" className=" h-18" />
+      <div className="flex items-center justify-between px-4 h-24">
+        <div className="w-26 h-auto">
+          <img src="/182logo.webp" alt="LOGO" />
         </div>
         <NavBar />
         <HamburgerBar
