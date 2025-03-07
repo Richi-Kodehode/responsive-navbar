@@ -1,8 +1,10 @@
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NAV_DATA } from "./data/navData";
 import { IoCloseSharp } from "react-icons/io5";
+import { useRef } from "react";
 
 export const HamburgerBar = ({ isOpen, handleMenuToggle, setIsOpen }) => {
+  const menuRef = useRef(null);
   return (
     <>
       <div>
@@ -14,7 +16,6 @@ export const HamburgerBar = ({ isOpen, handleMenuToggle, setIsOpen }) => {
         className={`absolute bg-orange-500 top-0 left-0 w-screen h-screen ${
           isOpen ? "" : "hidden"
         }`}
-        ref={menuRef}
       >
         <button onClick={handleMenuToggle}>
           <IoCloseSharp className="h-10 w-10 absolute right-4 top-6 text-white" />

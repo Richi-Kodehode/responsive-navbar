@@ -1,13 +1,18 @@
 export const NAV_DATA = [
   {
-    title: "home",
+    text: "Home",
+    href: "/",
   },
-
   {
-    title: "about",
+    text: "About",
+    href: "/about",
   },
-
   {
-    title: "contact",
+    text: "Services",
+    href: "/services",
+  },
+  {
+    text: "Contact",
+    href: "/contact",
   },
 ];

@@ -10,10 +10,7 @@ export const Header = () => {
   };
 
   return (
-    <header
-      id="hjem"
-      className="bg-black fixed w-full z-50 flex flex-col justify-center"
-    >
+    <header className="bg-black fixed w-full z-50 flex flex-col justify-center">
       <div className="flex items-center justify-between px-4 lg:px-12">
         <div>
           <img src="/182logo.png" alt="" className=" h-24 w-auto" />
